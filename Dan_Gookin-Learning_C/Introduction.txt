@@ -1,0 +1,14 @@
+Source Code -> Compiler -> Object Code -> Linker -> Created Code -> Test Code
+
+Object Code: Contains abbreviations called tokens, have .o extension with same file name as source Code
+
+Linker: Links different object code files and libraries, .exe or .out, a.out is default name
+
+Qualifiers for basic data types: short (size of value in variable), long, signed (allow negative), unsigned, const
+
+#include is a preprocessor directive, which instructs compiler to include or add something to the code
+
+escape sequences - \n, \t, \', \", \\ etc... %%
+
+sending output: printf(), putchar(), puts()
+  - all are present in the standard header file (stdio.h)
