@@ -10,5 +10,45 @@ Qualifiers for basic data types: short (size of value in variable), long, signed
 
 escape sequences - \n, \t, \', \", \\ etc... %%
 
+C language is stream oriented so output is buffered and not processed until the enter key is pressed
+
 sending output: printf(), putchar(), puts()
   - all are present in the standard header file (stdio.h)
+  - putchar outputs a character, (no \n at the end)
+  - puts outputs a string with a new line feed (\n) at the end
+  - printf can output strings, characters as well as variables; puts cant output variables
+
+character manipulation
+- ctype.h library
+- toupper and tolower use integer as well as character arguments ; eg: int ch='a'; printf("%c",toupper(ch));instead of char ch; integer is recommended for error detection when reading from files
+- isalpha(), check if letter is alphabet, boolean
+- isdigit(), check if letter is number, boolean
+
+logical
+- 0 is false
+- 1 or non zero true
+
+strings
+- string.h header file
+- array of chars, with \0 as final char
+- char Str1[]= "heyy";
+- char str2[3] = space for 2 chars
+- strlen(), strcpy(), strcat(), strstr(), strcmp()
+- use fgets() or another solid input function; fgets() retains/records new line feed
+- if not using double quaotes to declare but instead each separate character, include \0 at the end
+- assign string values to variables using input function like fgets or strcpy(), because = operator doesnt work
+- can store strings using pointer arrays instead of multidimensional arrays
+
+constants
+- const keyword, scope relative to function defined
+- use #define to define constant expression, scope is throughout file, expression in all caps
+
+array
+- cant chnage size after declaration
+- uninitialised arrays have garbage values
+- when initialising pointer to array, no need for ampersand, entire array is referenced; ptr holds address of first array value, use ++ to move to next value
+
+static
+- keyword directs program to retain values when function terminates
+
+look into preprocessors
