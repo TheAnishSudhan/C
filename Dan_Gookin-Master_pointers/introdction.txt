@@ -1,0 +1,29 @@
+C is midlevel language
+
+Pointers in C provide access to memory locations similar to how assembly language accesses memory locations directly
+
+pointer rules
+- Pointer is declared as a specific data type; must match data being referenced
+- Pointer must be initiliased before use; uninitialised pointer contains unknown memory locaion which if accessed can rahs system
+- Dual nature, with and wthout asterisk
+
+
+%p is used for addresss representation in hexadecimal (%d for int etc); p stands for pointer
+
+pointers hold addresses so no need for & in scanf or when function argument requires an address(pointer parameter)
+
+use NULL to test success fo function returning address
+
+to point a pointer variable to an array, no need for ampersand
+
+dont forget to allocate space for null character when allocating space for a string
+
+Memory allocation functions
+- malloc(): allocates uninitialised storage
+- calloc(): allocates and initialises storage- zeroes (for numeric) or null characters (for char)
+- realloc(): dynamically resize existing buffer; doesnt initialise added storage
+- free(): Used on allocated buffer to recover memory or storage; after using free() set pointer value to NULL(ptr=NULL) to inform program that it o longer references memory or prevent reference to unallocated chunk
+
+
+Pointer math
+- incrementing ptr doesnt add one to the address, it adds one chunk of thes defined data type's size to the address
