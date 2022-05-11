@@ -27,3 +27,11 @@ Memory allocation functions
 
 Pointer math
 - incrementing ptr doesnt add one to the address, it adds one chunk of thes defined data type's size to the address
+
+
+Pointer within structures
+- use dot notation to access the pointer members
+- array doesnt need asterisk since it represents address; use asterisk when assigning values otherwise
+
+Structure Pointers
+- for a pointer pointing to a structure variable, us -> notation to access its members
